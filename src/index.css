@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+}
+.App {
+  margin: 10px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.nav a:hover {
+  color: rgb(253, 253, 185);
+  cursor: pointer;
+  text-shadow: 2px 2px 2px gray;
+}
+.form {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.allCheese {
+  display: flex;
+  min-width: 300px;
+
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 500px;
+}
+.cheese {
+  display: grid;
+  border: 3px solid rgb(243, 243, 172);
+  margin: 3px;
+  border-radius: 5px;
+  /* width: 40%; */
+  grid-template-areas:
+    "i i i"
+    "a a a"
+    "n n n";
+}
+.cheese a {
+  text-decoration: none;
+  font-weight: bolder;
+  grid-area: a;
+}
+.cheese a:hover {
+  color: rgb(151, 151, 104);
+  text-shadow: -1px 1px 1px rgb(196, 196, 196);
+}
+.cheese img {
+  grid-area: i;
+}
+.cheese h3 {
+  grid-area: n;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: rgb(243, 243, 172);
+  padding: 1px;
+}
+.editForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25vh;
+}
+input[type="submit"],
+button {
+  background-color: rgb(243, 243, 172);
+  color: black;
+  border: 1px solid black;
+  width: 20%;
+  margin: 0 auto;
+}
+input[type="submit"]:hover,
+button:hover {
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
